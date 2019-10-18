@@ -4,7 +4,7 @@ import logo from './skyscrapper.jpg'
 function App() {
   return (
     <div>
-        <img src={logo} alt="skyscrapper"/>
+        <img src={logo} width={'100%'} height={'400px'} alt="skyscrapper"/>
         <h1>
             Hello World
         </h1>
