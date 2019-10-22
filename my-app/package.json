@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://PDixant.github.io",
@@ -12,6 +12,8 @@
     "styled-components": "^4.4.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -33,6 +35,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.1.1",
+    "react-router-dom": "^5.1.2"
   }
 }
