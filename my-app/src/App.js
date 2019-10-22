@@ -15,6 +15,7 @@ position: relative;
 function App() {
 
   return (
+    <div>
     <LayoutBackground>
     <Layout style={{background: `url(${logo}) center / cover`}}>
         <Header transparent title="Title" style={{color: 'white'}}>
@@ -36,6 +37,12 @@ function App() {
         <Content />
     </Layout>
     </LayoutBackground>
+    <div>
+        <h1>
+            WEBSITE BUILD IN PROGRESS
+        </h1>
+    </div>
+    </div>
   );
 }
 
