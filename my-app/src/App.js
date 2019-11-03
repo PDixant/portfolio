@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="demo-big-content">
     <Layout>
-        <HeaderGradiant title={<Link style={{textDecoration: 'none', color: 'white'}} to="portfolio/">MyPortfolio</Link>} scroll>
+        <HeaderGradiant title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
             <Navigation>
                 <Link to="/Resume">Resume</Link>
                 <Link to="/AboutMe">About me</Link>
@@ -23,7 +23,7 @@ function App() {
                 <Link to="/Projects">Projects</Link>
             </Navigation>
         </HeaderGradiant>
-        <Drawer  title={<Link style={{textDecoration: 'none', color: 'black'}} to="portfolio/">MyPortfolio</Link>}>
+        <Drawer  title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
             <Navigation>
                 <Link to="/Resume">Resume</Link>
                 <Link to="/AboutMe">About Me</Link>

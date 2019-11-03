@@ -9,10 +9,10 @@ import { Switch, Route } from 'react-router-dom'
 const PrivateRoutes = () => (
     <Switch>
         <Route exact path="/" component={LandingPage} />
-        <Route exact path="/Resume" component={Resume} />
-        <Route exact path="/Contact" component={Contact} />
-        <Route exact path="/Projects" component={Projects} />
-        <Route exact path="/AboutMe" component={AboutMe} />
+        <Route exact path="/Resume/" component={Resume} />
+        <Route exact path="/Contact/" component={Contact} />
+        <Route exact path="/Projects/" component={Projects} />
+        <Route exact path="/AboutMe/" component={AboutMe} />
     </Switch>
 )
 
