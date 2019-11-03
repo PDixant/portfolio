@@ -52,6 +52,11 @@ class LandingPage extends Component {
                     </StyledBanner>
                     </Cell>
                 </StyledGridLayout>
+                <div>
+                    <h1>
+                    WEBSITE BUILD IN PROGRESS
+                    </h1>
+                </div>
             </PageLayout>
         )
     }
