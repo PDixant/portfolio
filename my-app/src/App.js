@@ -1,47 +1,35 @@
 import React from 'react';
 import './App.css';
-import logo from './skyscrapper.jpg'
-import styled from 'styled-components'
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl'
-
-const LayoutBackground = styled.div`
-height: 400px;
-width: 100%;
-position: relative;
-`;
+import PrivateRoutes from './Components/PrivateRoutes';
+import { Link } from 'react-router-dom';
 
 function App() {
 
   return (
     <div>
-    <LayoutBackground>
-    <Layout style={{background: `url(${logo}) center / cover`}}>
-        <Header transparent title="Title" style={{color: 'white'}}>
+    <Layout>
+        <Header title="Title" scroll style={{color: 'white'}}>
             <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <Link to="/Resume">Resume</Link>
+                <Link to="/AboutMe">About me</Link>
+                <Link to="/Contact">Contact</Link>
+                <Link to="/Projects">Projects</Link>
             </Navigation>
         </Header>
         <Drawer title="Title">
             <Navigation>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
-                <a href="#">Link</a>
+                <Link to="/Resume">Resume</Link>
+                <Link to="/AboutMe">About Me</Link>
+                <Link to="/Contact">Contact</Link>
+                <Link to="/Projects">Projects</Link>
             </Navigation>
         </Drawer>
-        <Content />
+        <Content>
+        <div className="page-content" />
+        <PrivateRoutes/>
+        </Content>
     </Layout>
-    </LayoutBackground>
-    <div>
-        <h1>
-            WEBSITE BUILD IN PROGRESS
-        </h1>
-    </div>
     </div>
   );
 }
