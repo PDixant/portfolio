@@ -8,11 +8,11 @@ import Projects from './Projects';
 import { Switch, Route } from 'react-router-dom'
 const PrivateRoutes = () => (
     <Switch>
-        <Route exact path="/" component={LandingPage} />
-        <Route exact path="/Resume/" component={Resume} />
-        <Route exact path="/Contact/" component={Contact} />
-        <Route exact path="/Projects/" component={Projects} />
-        <Route exact path="/AboutMe/" component={AboutMe} />
+        <Route exact path="/portfolio/" component={LandingPage} />
+        <Route exact path="/portfolio/Resume/" component={Resume} />
+        <Route exact path="/portfolio/Contact/" component={Contact} />
+        <Route exact path="/portfolio/Projects/" component={Projects} />
+        <Route exact path="/portfolio/AboutMe/" component={AboutMe} />
     </Switch>
 )
 
