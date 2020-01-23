@@ -114,6 +114,7 @@ class LandingPage extends Component {
                     </StyledBanner>
                     </Cell>
                 </StyledGridLayout>
+                
                 <Parallax
                     bgImage={require('../images/canvass.jpg')}
                     bgImageAlt="the cat"
