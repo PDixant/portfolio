@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Grid, Cell } from 'react-mdl';
-import Logo from "../images/profile.jpg"
-// import {Linkedin, Instagram, Facebook, Github} from "styled-icons/fa-brands/";
-import {Parallax} from 'react-parallax';
+import Logo from "../images/profile.jpg";
+import Media from "./Media"
+//import {Parallax} from 'react-parallax';
 
 const PageLayout = styled.div`
 width: '100%';
@@ -31,35 +31,6 @@ border-radius: 10px;
 color: white;
 text-align: center;
 `;
-// const MediaContainer = styled.div`
-// padding-top: 20px;
-// text-align: center;
-// display: flex;
-// margin: 0 auto;
-// flex-wrap: wrap;
-// justify-content: space-between;
-// height: 100px;
-// width: 25%;
-// `;
-
-// const StyledLinkedIn = styled(Linkedin)`
-// height: 100px;
-// width: 100px;
-// `
-// const StyledInstagram = styled(Instagram)`
-// height: 100px;
-// width: 100px;
-// `
-
-// const StyledFacebook = styled(Facebook)`
-// height: 100px;
-// width: 100px;
-// `
-
-// const StyledGithub = styled(Github)`
-// height: 100px;
-// width: 100px;
-// `
 
 const StyledHeader = styled.h1`
     font-size: ${props => {
@@ -76,18 +47,18 @@ const StyledHeader = styled.h1`
     }};
 `;
 
-const insideStyles = {
-    color: '#a3a3c2',
-    'font-size': '25px',
-    'font-weight': 'bold',
-    background: "#4d0099",
-    'border-radius': '25px',
-    padding: 10,
-    position: "absolute",
-    top: "90%",
-    left: "50%",
-    transform: "translate(-50%,-50%)"
-};
+// const insideStyles = {
+//     color: '#a3a3c2',
+//     'font-size': '25px',
+//     'font-weight': 'bold',
+//     background: "#4d0099",
+//     'border-radius': '25px',
+//     padding: 10,
+//     position: "absolute",
+//     top: "90%",
+//     left: "50%",
+//     transform: "translate(-50%,-50%)"
+// };
 
 class LandingPage extends Component {
     constructor(props){
@@ -115,22 +86,17 @@ class LandingPage extends Component {
                     </Cell>
                 </StyledGridLayout>
                 
-                <Parallax
+                {/* <Parallax
                     bgImage={require('../images/canvass.jpg')}
                     bgImageAlt="the cat"
                     strength={500}
                     >
                         <div style={{ height: '500px' }} />
                         <div style={insideStyles}>My Team</div>
-                    </Parallax>
-                {/*
-                these are social media custom images you made, make sure to enable them when your done
-                <MediaContainer>
-                    <StyledLinkedIn/>
-                    <StyledInstagram/>
-                    <StyledFacebook/>
-                    <StyledGithub/>
-                </MediaContainer> */}
+                    </Parallax> */}
+                
+                {/* these are social media custom images you made, make sure to enable them when your done */}
+                <Media/>
             </PageLayout>
         )
     }
