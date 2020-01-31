@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import { Grid, Cell, Footer } from 'react-mdl';
 import Logo from "../images/profile.jpg";
 import Media from "./Media"
-//import {Parallax} from 'react-parallax';
-
+import Resume from "./Resume";
 const PageLayout = styled.div`
 width: '100%';
 margin: 'auto';
@@ -41,15 +40,6 @@ color: white;
 text-align: center;
 `;
 
-// implement soon - try using this as a text box type thing to fill in information about yourself
-// const AboutMeContainer = styled.div`
-// margin: 0 auto;
-// text-align: center;
-// border: solid black 2px;
-// height: 600px;
-// width: 75%;
-// `;
-
 const StyledHeader = styled.h1`
     font-size: ${props => {
     if (window.innerWidth > props.windowSize){
@@ -64,19 +54,6 @@ const StyledHeader = styled.h1`
     }
     }};
 `;
-
-// const insideStyles = {
-//     color: '#a3a3c2',
-//     'font-size': '25px',
-//     'font-weight': 'bold',
-//     background: "#4d0099",
-//     'border-radius': '25px',
-//     padding: 10,
-//     position: "absolute",
-//     top: "90%",
-//     left: "50%",
-//     transform: "translate(-50%,-50%)"
-// };
 
 class LandingPage extends Component {
     constructor(props){
@@ -103,19 +80,7 @@ class LandingPage extends Component {
                     </StyledBanner>
                     </Cell>
                 </StyledGridLayout>
-                {/* use this to fill in information about yourself */}
-                {/* <AboutMeContainer/>  */}
-                
-                {/* <Parallax
-                    bgImage={require('../images/canvass.jpg')}
-                    bgImageAlt="the cat"
-                    strength={500}
-                    >
-                        <div style={{ height: '500px' }} />
-                        <div style={insideStyles}>My Team</div>
-                    </Parallax> */}
-                
-                {/* these are social media custom images you made, make sure to enable them when your done */}
+                <Resume/>
                 <StyledFooter size="mini">
                     <Media/>
                 </StyledFooter>
