@@ -1,6 +1,10 @@
+
 import React, { Component } from 'react';
 import styled from "styled-components";
 import {Tabs, Tab} from "react-mdl";
+import AboutMe from "./AboutMe"
+import Projects from './Projects';
+import ContactMe from './ContactMe';
 
 const MyContainer  = styled.div`
 border: solid black 2px;
@@ -10,7 +14,7 @@ width: 70%;
 height: 20%;
 `
 
-class Resume extends Component {
+class Navigation extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -37,6 +41,7 @@ class Resume extends Component {
                     <h3>
                         About me
                     </h3>
+                    <AboutMe/>
                 </div>
             </MyContainer>
             )}
@@ -46,8 +51,9 @@ class Resume extends Component {
                         <div>
                             <h3>
                                 Projects
-                        </h3>
-                            </div>
+                            </h3>
+                            <Projects/>
+                        </div>
                     </MyContainer>
                 )
             }
@@ -58,6 +64,7 @@ class Resume extends Component {
                                 <h3>
                                     Contact Me
                                 </h3>
+                            <ContactMe/>
                             </div>
                         </MyContainer>
                     )
@@ -67,4 +74,4 @@ class Resume extends Component {
     }
 }
 
-export default Resume;
+export default Navigation;

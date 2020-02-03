@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Grid, Cell, Footer } from 'react-mdl';
 import Logo from "../images/profile.jpg";
 import Media from "./Media"
-import Resume from "./Resume";
+import Navigation from "./Navigation";
+
 const PageLayout = styled.div`
 width: '100%';
 margin: 'auto';
@@ -80,7 +81,7 @@ class LandingPage extends Component {
                     </StyledBanner>
                     </Cell>
                 </StyledGridLayout>
-                <Resume/>
+                <Navigation/>
                 <StyledFooter size="mini">
                     <Media/>
                 </StyledFooter>
