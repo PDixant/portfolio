@@ -8,6 +8,7 @@ import Navigation from "./Navigation";
 const PageLayout = styled.div`
 width: '100%';
 margin: 'auto';
+overflow-y: 'scroll';
 `;
 
 const StyledFooter = styled(Footer)`

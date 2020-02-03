@@ -7,33 +7,26 @@ const MediaContainer = styled.div`
 text-align: center;
 display: flex;
 margin: 0 auto;
-justify-content: space-evenly;
-height: 50px;
-width: 50%;
+justify-content: space-between;
+height: 95%;
+width: 80%;
 `;
 
 const StyledLinkedIn = styled(Linkedin)`
-padding: 2%;
 height: 100%;
-width: 75%;
 color: white;
 `
 const StyledInstagram = styled(Instagram)`
-padding: 2%;
 height: 100%;
-width: 75%;
 color: white;
 `
 
 const StyledGithub = styled(Github)`
-padding: 2%;
 height: 100%;
-width: 75%;
 color: white;
 `
 const StyledBlog = styled(Blog)`
 height: 100%;
-width: 75%;
 color: white;
 `;
 

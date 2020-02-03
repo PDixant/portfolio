@@ -10,7 +10,7 @@ const MyContainer  = styled.div`
 border: solid black 2px;
 margin: auto;
 margin-top: 1%;
-width: 70%;
+width: 90%;
 height: 20%;
 `
 
