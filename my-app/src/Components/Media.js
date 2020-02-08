@@ -4,29 +4,32 @@ import {Linkedin, Instagram, Github} from "styled-icons/fa-brands/";
 import { Blog } from "styled-icons/fa-solid/Blog"
 
 const MediaContainer = styled.div`
-text-align: center;
 display: flex;
 margin: 0 auto;
-justify-content: space-between;
-height: 95%;
-width: 80%;
+justify-content: space-evenly;
+height: 100%;
+width: 90%;
 `;
 
 const StyledLinkedIn = styled(Linkedin)`
 height: 100%;
+width: 100%;
 color: white;
 `
 const StyledInstagram = styled(Instagram)`
 height: 100%;
+width: 100%;
 color: white;
 `
 
 const StyledGithub = styled(Github)`
 height: 100%;
+width: 100%;
 color: white;
 `
 const StyledBlog = styled(Blog)`
 height: 100%;
+width: 100%;
 color: white;
 `;
 

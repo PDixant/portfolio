@@ -3,8 +3,6 @@ import React from 'react';
 
 const AboutMe = () => {
 
-
-
     return(
         <div>
             Just some stuff about me

@@ -11,8 +11,13 @@ border: solid black 2px;
 margin: auto;
 margin-top: 1%;
 width: 90%;
-height: 20%;
+height: 100%;
 `
+const PageLayout = styled.div`
+width: '100%';
+margin: 'auto';
+overflow-y: 'scroll';
+`;
 
 class Navigation extends Component {
     constructor(props){
@@ -26,7 +31,7 @@ class Navigation extends Component {
             activeTab
         } = this.state
         return(
-            <div>
+            <PageLayout>
                 <div className="demo-tabs">
                     <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                         <Tab>About Me</Tab>
@@ -69,7 +74,7 @@ class Navigation extends Component {
                         </MyContainer>
                     )
                 }
-            </div>
+            </PageLayout>
         )
     }
 }

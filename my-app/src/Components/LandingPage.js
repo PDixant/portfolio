@@ -13,11 +13,17 @@ overflow-y: 'scroll';
 
 const StyledFooter = styled(Footer)`
 position: fixed;
-bottom: 0;
-right: 0;
 left: 0;
+right: 0;
+bottom: 0;
 height: 5%;
+text-align: left; 
 width: 100%;
+`;
+
+const EmptySpace = styled.div`
+height: 150px;
+width: 100px;
 `;
 
 const StyledImg = styled.img`
@@ -86,6 +92,7 @@ class LandingPage extends Component {
                 <StyledFooter size="mini">
                     <Media/>
                 </StyledFooter>
+                <EmptySpace/>
             </PageLayout>
         )
     }
