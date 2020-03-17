@@ -38,14 +38,11 @@ class Navigation extends Component {
                         <Tab>Projects</Tab>
                         <Tab>Contact Me</Tab>
                     </Tabs>
-                </div>  
+                </div>
 
             {activeTab === 0 && (
             <MyContainer>
                 <div>
-                    <h3>
-                        About me
-                    </h3>
                     <AboutMe/>
                 </div>
             </MyContainer>

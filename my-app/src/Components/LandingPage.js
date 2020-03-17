@@ -71,7 +71,6 @@ class LandingPage extends Component {
         }
     }
     render(){
-        console.log(window.innerWidth)
         const { minSize } = this.state;
         return(
             <PageLayout>
