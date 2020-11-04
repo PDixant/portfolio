@@ -17,12 +17,6 @@ const AboutMe = () => {
         <h1>
           Hobbies
         </h1>
-        <ul>
-          During my free time I like to play video games, play sports like basketball,
-          badminton, billiard pool and Table tennis I like to draw and have deep
-          discussions on topics such as UFO's and lucid dreaming with my friends.
-        </ul>
-
         
 
         </div>
