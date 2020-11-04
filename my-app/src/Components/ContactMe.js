@@ -1,82 +1,46 @@
-import React, { Component } from 'react';
-import { Textfield, Button } from 'react-mdl';
-
+import React from 'react';
+import emailjs from 'emailjs-com';
 // const ContactMe = () => {
 
-class ContactMe extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            fName: '',
-            lName: '',
-            email: '',
-        }
-    }
+function ContactMe() {
 
-    handleChange = (e) => {
-        this.setState({
-            [e.target.id]: e.target.value
-        })
-
-    }
-
-    submitEmail = (e) => {
-        const { email, fName, lName} = this.state;
-        console.log(email, fName, lName)
+    function sendEmail(e) {
         e.preventDefault();
+
+        emailjs.sendForm('gmail', 'template_ylqwn9z', e.target, 'user_bbmNLOKzQC0ODgqHngWct')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
     }
 
-
-    render() {
     return(
-
         <div>
-
-            <form onSubmit={(e) => this.submitEmail(e)}>
-            <label>First Name </label>
-            <Textfield
-                onChange={ (e) => this.handleChange(e)}
-                label="Type Here"
-                id='fName'
-                // style={{width: '200px'}}
-                required
-                />
-            <br/>
-            <label>
-                Last Name </label>
-            <Textfield
-                onChange={(e) => this.handleChange(e)}
-                id='lName'
-                label="Type here"
-                // style={{width: '200px'}}
-                required
-                />
-            <br/>
-
-            {/* Numeric textfield */}
-            <label>Email </label>
-            <Textfield
-                onChange={(e) => this.handleChange(e)}
-                id='email'
-                label="Type here"
-                // style={{width: '200px'}}
-                required
-                />
-            <br/>
-            <Textfield
-                onChange={() => {}}
-                label="Text lines..."
-                rows={3}
-                
-            />
-            <br/>
-            <Button raised ripple type='submit'>
-                Send
-            </Button>
-            </form>
+            <div className="container">
+            <form onSubmit={sendEmail}>
+                    <div className="row pt-5 mx-auto">
+                        <div className="col-8 form-group mx-auto">
+                            <input type="text" className="form-control" placeholder="Name" name="name"/>
+                        </div>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <input type="email" className="form-control" placeholder="Email Address" name="email"/>
+                        </div>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <input type="text" className="form-control" placeholder="Subject" name="subject"/>
+                        </div>
+                        <div className="col-8 form-group pt-2 mx-auto">
+                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                        </div>
+                        <div className="col-8 pt-3 mx-auto">
+                            <input type="submit" className="btn btn-info" value="Send Message"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     )
-}
 }
 
 export default ContactMe;
