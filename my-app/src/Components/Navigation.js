@@ -7,7 +7,6 @@ import Projects from './Projects';
 import ContactMe from './ContactMe';
 
 const MyContainer  = styled.div`
-border: solid black 2px;
 margin: auto;
 margin-top: 1%;
 width: 90%;
@@ -63,9 +62,6 @@ class Navigation extends Component {
                     activeTab === 2 && (
                         <MyContainer>
                             <div>
-                                <h3>
-                                    Contact Me
-                                </h3>
                             <ContactMe/>
                             </div>
                         </MyContainer>

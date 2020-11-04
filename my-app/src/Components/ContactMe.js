@@ -1,5 +1,36 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
+import styled from 'styled-components';
+import { Textfield } from 'react-mdl';
+
+const StyledDivContainer = styled.div`
+  margin: auto;
+  width: 400px;
+  background: #fff;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+`
+
+const Input = styled.input.attrs({ type: 'submit' })`
+  background: #00aec9;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  width: 100%;
+  border-radius: 5px;
+  height: 35px;
+  border-color: transparent;
+  box-shadow: 0px;
+  outline: none;
+  transition: 0.15s;
+  text-align: center;
+  &:active {
+    background-color: #f1ac15;
+  }
+`
+
 // const ContactMe = () => {
 
 function ContactMe() {
@@ -18,27 +49,44 @@ function ContactMe() {
 
     return(
         <div>
-            <div className="container">
+            <StyledDivContainer>
             <form onSubmit={sendEmail}>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
-                            <input type="text" className="form-control" placeholder="Name" name="name"/>
+                            <Textfield
+                                type = "text"
+                                label="Name"
+                                name="name"
+                            />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="email" className="form-control" placeholder="Email Address" name="email"/>
+                            <Textfield
+                                type = "email"
+                                label="Email Address"
+                                name="email"
+                            />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <input type="text" className="form-control" placeholder="Subject" name="subject"/>
+                            <Textfield
+                                type="text"
+                                label="Subject"
+                                name="subject"
+                            />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Your message" name="message"></textarea>
+                            <Textfield
+                                type="text"
+                                rows = '8'
+                                label="Message"
+                                name="message"
+                            />
                         </div>
                         <div className="col-8 pt-3 mx-auto">
-                            <input type="submit" className="btn btn-info" value="Send Message"></input>
+                            <Input/>
                         </div>
                     </div>
                 </form>
-            </div>
+            </StyledDivContainer>
         </div>
     )
 }

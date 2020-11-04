@@ -1,25 +1,34 @@
 import React from 'react';
+import styled from 'styled-components';
 
+
+const StyledEduContainer = styled.div`
+margin: auto;
+width: 80%;
+background: #fff;
+padding: 40px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box - shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+`;
 
 const AboutMe = () => {
 
     return(
-        <div>
-        <h1>
-          Education
-        </h1>
+        <StyledEduContainer>
+        <h5>
+          Who am I?
+        </h5>
         <ul>
-          I'm currently a undergrad student at the University of Guelph pursuing
-          a career in software development doing my bachelor in computing. I am
-          Currently doing my major in Software Engineering with a minor in mathematics.
+          I am a 4rth Year Student at the Unversity of Guelph, studying Software Engineering in the Bachelor of Computing.
+          <br/>
         </ul>
 
-        <h1>
+        <h5>
           Hobbies
-        </h1>
+        </h5>
         
 
-        </div>
+        </StyledEduContainer>
     );
 }
 
