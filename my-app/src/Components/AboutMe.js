@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const StyledEduContainer = styled.div`
 margin: auto;
-width: 80%;
+0
 background: #fff;
 padding: 40px;
 border: 1px solid rgba(0, 0, 0, 0.1);
@@ -19,12 +19,12 @@ const AboutMe = () => {
           Who am I?
         </h5>
         <ul>
-          I am a 4rth Year Student at the Unversity of Guelph, studying Software Engineering in the Bachelor of Computing.
+          I am a 4th Year Student at the Unversity of Guelph, studying Software Engineering in the Bachelor of Computing.
           <br/>
         </ul>
 
         <h5>
-          Hobbies
+          Experience
         </h5>
         
 
