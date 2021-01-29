@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Grid, Cell } from 'react-mdl';
-import Logo from "../images/profile.jpg";
+import { Cell } from 'react-mdl';
 import BGimage from "../images/road.jpg";
 import Navigation from "./Navigation";
 
 const PageLayout = styled.div`
-width: '100%';
-margin: 'auto';
-overflow-y: 'scroll';
+width: 100%;
+
+margin: auto;
+overflow-y: hidden;
 `;
 
 
@@ -17,26 +17,23 @@ height: 150px;
 width: 100px;
 `;
 
-const StyledImg = styled.img`
-height: 200px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-border-radius: 50%;
-`;
-
 
 const StyledGridLayout = styled.div`
+height: 350px;
 background: url(${BGimage}) center / cover;
+margin-top: -25px;
 `;
 
 
 const StyledBanner = styled.div`
 width: 75%;
+display: block;
 margin: auto;
 border-radius: 10px;
-color: white;
-text-align: center;
+color: #DEE3E7;
+padding-top: 190px;
+padding-right: 50px;
+;
 `;
 
 const StyledHeader = styled.h1`
@@ -67,15 +64,11 @@ class LandingPage extends Component {
             <PageLayout>
                 <StyledGridLayout>
                     <Cell col={12}>
-                    <StyledImg
-                    src={Logo}
-                    alt="avatar"
-                    />
-                    <StyledBanner>
-                            <StyledHeader windowSize={minSize} color="grey">
+                    <StyledBanner> 
+                            <StyledHeader windowSize={minSize} color="grey"> 
                             Dixant Patel
-                        </StyledHeader>
-                    </StyledBanner>
+                         </StyledHeader>
+                     </StyledBanner>
                     </Cell>
                 </StyledGridLayout>
                 <Navigation/>

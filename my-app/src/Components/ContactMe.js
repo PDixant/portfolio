@@ -5,7 +5,8 @@ import { Textfield } from 'react-mdl';
 
 const StyledDivContainer = styled.div`
   margin: auto;
-  width: 400px;
+  width: auto;
+  max-width:400px;
   background: #fff;
   padding: 40px;
   border: 1px solid rgba(0, 0, 0, 0.1);
