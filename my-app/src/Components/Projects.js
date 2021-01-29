@@ -4,7 +4,7 @@ const Projects = () => {
 
     return (
         <div>
-            Just some stuff about my projects and then show projects
+            {/* Just some stuff about my projects and then show projects */}
         </div>
     )
 }

@@ -27,7 +27,7 @@ const AboutMe = () => {
           <StyledDownloadBttn />
           </Link>
           
-        <h5>
+        {/* <h5>
           Who am I?
         </h5>
         <ul>
@@ -37,7 +37,7 @@ const AboutMe = () => {
 
         <h5>
           Experience
-        </h5>
+        </h5> */}
         
         
 

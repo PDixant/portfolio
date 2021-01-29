@@ -50,9 +50,6 @@ class Navigation extends Component {
                 activeTab === 1 && (
                     <MyContainer>
                         <div>
-                            <h3>
-                                Projects
-                            </h3>
                             <Projects/>
                         </div>
                     </MyContainer>

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Grid, Cell, Footer } from 'react-mdl';
+import { Grid, Cell } from 'react-mdl';
 import Logo from "../images/profile.jpg";
-// import Banner from "../images/space.jpg";
-import Media from "./Media"
+import BGimage from "../images/road.jpg";
 import Navigation from "./Navigation";
 
 const PageLayout = styled.div`
@@ -12,17 +11,6 @@ margin: 'auto';
 overflow-y: 'scroll';
 `;
 
-const StyledFooter = styled(Footer)`
-position: fixed;
-left: 0;
-right: 0;
-bottom: 0;
-height: 5%;
-text-align: left; 
-width: 100%;
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
-`;
 
 const EmptySpace = styled.div`
 height: 150px;
@@ -38,16 +26,10 @@ border-radius: 50%;
 `;
 
 
-const StyledGridLayout = styled(Grid)`
-background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
+const StyledGridLayout = styled.div`
+background: url(${BGimage}) center / cover;
 `;
 
-// const StyledGridLayout = styled.div`
-// background-image: url(${Banner})
-// height: 100%
-// width: 100%
-// `;
 
 const StyledBanner = styled.div`
 width: 75%;
@@ -90,16 +72,13 @@ class LandingPage extends Component {
                     alt="avatar"
                     />
                     <StyledBanner>
-                        <StyledHeader windowSize={minSize}>
+                            <StyledHeader windowSize={minSize} color="grey">
                             Dixant Patel
                         </StyledHeader>
                     </StyledBanner>
                     </Cell>
                 </StyledGridLayout>
                 <Navigation/>
-                <StyledFooter size="mini">
-                    <Media/>
-                </StyledFooter>
                 <EmptySpace/>
             </PageLayout>
         )
