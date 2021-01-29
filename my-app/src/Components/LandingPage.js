@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Grid, Cell, Footer } from 'react-mdl';
 import Logo from "../images/profile.jpg";
+// import Banner from "../images/space.jpg";
 import Media from "./Media"
 import Navigation from "./Navigation";
 
@@ -19,6 +20,8 @@ bottom: 0;
 height: 5%;
 text-align: left; 
 width: 100%;
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
 `;
 
 const EmptySpace = styled.div`
@@ -34,11 +37,17 @@ margin-right: auto;
 border-radius: 50%;
 `;
 
+
 const StyledGridLayout = styled(Grid)`
-background: #bdc3c7;
-background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
-background: linear-gradient(to right, #2c3e50, #bdc3c7);
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
 `;
+
+// const StyledGridLayout = styled.div`
+// background-image: url(${Banner})
+// height: 100%
+// width: 100%
+// `;
 
 const StyledBanner = styled.div`
 width: 75%;

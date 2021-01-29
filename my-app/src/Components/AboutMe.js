@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import {Link} from 'react-router-dom';
+import { Download } from '@styled-icons/feather/Download';
 
 const StyledEduContainer = styled.div`
 margin: auto;
@@ -11,10 +12,21 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 box - shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 `;
 
+
+const StyledDownloadBttn = styled(Download)`
+height: 30px;
+width 35px;
+`;
 const AboutMe = () => {
 
     return(
-        <StyledEduContainer>
+      <StyledEduContainer>
+        
+          Download Resume here
+          <Link to='../Assets/DixantPatelResume.pdf' target="_blank" download="DixantPatelResume.pdf">
+          <StyledDownloadBttn />
+          </Link>
+          
         <h5>
           Who am I?
         </h5>
@@ -26,6 +38,7 @@ const AboutMe = () => {
         <h5>
           Experience
         </h5>
+        
         
 
         </StyledEduContainer>
