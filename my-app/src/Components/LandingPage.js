@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Cell } from 'react-mdl';
 import BGimage from "../images/space2.png";
 import Navigation from "./Navigation";
 import Media from "./Media"
