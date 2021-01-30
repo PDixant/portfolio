@@ -5,32 +5,31 @@ import { Blog } from "styled-icons/fa-solid/Blog"
 
 const MediaContainer = styled.div`
 display: flex;
-margin: 0 auto;
-justify-content: space-evenly;
+justify-content: flex-start;
 height: 100%;
-width: 90%;
+width: 100%;
 `;
 
 const StyledLinkedIn = styled(Linkedin)`
 height: 100%;
 width: 100%;
-color: white;
+color: #ECEFF1;
 `
 const StyledInstagram = styled(Instagram)`
 height: 100%;
 width: 100%;
-color: white;
+color: #ECEFF1;
 `
 
 const StyledGithub = styled(Github)`
 height: 100%;
 width: 100%;
-color: white;
+color: #ECEFF1;
 `
 const StyledBlog = styled(Blog)`
 height: 100%;
 width: 100%;
-color: white;
+color: #ECEFF1;
 `;
 
 const Media = () =>  {

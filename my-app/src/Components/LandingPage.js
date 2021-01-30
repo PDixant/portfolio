@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Cell } from 'react-mdl';
-import BGimage from "../images/road.jpg";
+import BGimage from "../images/space2.png";
 import Navigation from "./Navigation";
-
+import Media from "./Media"
 const PageLayout = styled.div`
 width: 100%;
 
@@ -21,56 +21,41 @@ width: 100px;
 const StyledGridLayout = styled.div`
 height: 350px;
 background: url(${BGimage}) center / cover;
-margin-top: -25px;
+margin-top: 0px;
 `;
 
-
+const MediaContainer = styled.div`
+height: 30px;
+width: 200px;
+`;
 const StyledBanner = styled.div`
-width: 75%;
-display: block;
 margin: auto;
-border-radius: 10px;
-color: #DEE3E7;
-padding-top: 190px;
-padding-right: 50px;
-;
+color: #ECEFF1;
 `;
 
-const StyledHeader = styled.h1`
-    font-size: ${props => {
-    if (window.innerWidth > props.windowSize){
-        return '56px';
-    }
-    else if (window.innerWidth <= props.windowSize &&
-             window.innerWidth > 380) {
-        return '30px';
-    }
-    else if(window.innerWidth < 380){
-        return '25px';
-    }
-    }};
+const StyledName = styled.div`
+padding-top: 190px;
+padding-left: 10px;
+padding-bottom: 20px;
+font-size: 40px;
+font-weight: bold;
 `;
+
 
 class LandingPage extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            minSize: 670,
-        }
-    }
     render(){
-        const { minSize } = this.state;
         return(
             <PageLayout>
+                    <StyledBanner>
                 <StyledGridLayout>
-                    <Cell col={12}>
-                    <StyledBanner> 
-                            <StyledHeader windowSize={minSize} color="grey"> 
-                            Dixant Patel
-                         </StyledHeader>
-                     </StyledBanner>
-                    </Cell>
+                    <StyledName>
+                        Dixant Patel
+                    </StyledName>
+                        <MediaContainer>
+                            <Media />
+                        </MediaContainer>
                 </StyledGridLayout>
+                     </StyledBanner>
                 <Navigation/>
                 <EmptySpace/>
             </PageLayout>
