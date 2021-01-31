@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbd60e5f8143b99ed23bc6aa8ee4c78d",
+    "revision": "5fe489c5d2910cf6d1032cbadc92cdc4",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "baa9307c9b04e9f84006",
+    "revision": "16c0f7d5ca5a5d057e08",
     "url": "/portfolio/static/css/2.cd1c2086.chunk.css"
   },
   {
-    "revision": "63b262704942b56b479c",
+    "revision": "00d255d0a840d1cdde77",
     "url": "/portfolio/static/css/main.36497136.chunk.css"
   },
   {
-    "revision": "baa9307c9b04e9f84006",
-    "url": "/portfolio/static/js/2.6a3fa123.chunk.js"
+    "revision": "16c0f7d5ca5a5d057e08",
+    "url": "/portfolio/static/js/2.ab46263f.chunk.js"
   },
   {
     "revision": "dcc96ab0bcc49d72e3ca12b1d3c14c9d",
-    "url": "/portfolio/static/js/2.6a3fa123.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.ab46263f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "63b262704942b56b479c",
-    "url": "/portfolio/static/js/main.b9a4859f.chunk.js"
+    "revision": "00d255d0a840d1cdde77",
+    "url": "/portfolio/static/js/main.30937693.chunk.js"
   },
   {
     "revision": "b37b5bb5a98282a2f0e7",
     "url": "/portfolio/static/js/runtime-main.b449097c.js"
+  },
+  {
+    "revision": "d7993cb07ad6c8bad9997b3d2b7fea18",
+    "url": "/portfolio/static/media/DixantPatelResume.d7993cb0.pdf"
   },
   {
     "revision": "f57c71edac5721e659f3dd5668825356",
