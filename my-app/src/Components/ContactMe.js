@@ -2,7 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import styled from 'styled-components';
 import { Textfield } from 'react-mdl';
-
+import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from 'react-mdl';
 const StyledDivContainer = styled.div`
   margin: auto;
   width: auto;
@@ -34,9 +34,46 @@ const Input = styled.input.attrs({ type: 'submit' })`
 
 // const ContactMe = () => {
 
-function ContactMe() {
+class ContactMe extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            openDialog: false
+        };
+        this.handleOpenDialog = this.handleOpenDialog.bind(this);
+        this.handleCloseDialog = this.handleCloseDialog.bind(this);
+        this.sendEmail = this.sendEmail.bind(this);
+    }
 
-    function sendEmail(e) {
+    handleOpenDialog() {
+        this.setState({
+            openDialog: true
+        });
+    }
+
+    handleCloseDialog() {
+        this.setState({
+            openDialog: false
+        });
+    }
+
+    // showModel(){
+    //     return (
+    //         <div>
+    //             <Dialog open={this.state.openDialog}>
+    //                 <DialogTitle>Allow this site to collect usage data to improve your experience?</DialogTitle>
+    //                 <DialogContent>
+    //                     <p>Allowing us to collect data will let us get you the information you want faster.</p>
+    //                 </DialogContent>
+    //                 <DialogActions fullWidth>
+    //                     <Button type='button'>Agree</Button>
+    //                     <Button type='button' onClick={this.handleCloseDialog}>Disagree</Button>
+    //                 </DialogActions>
+    //             </Dialog>
+    //         </div>
+    //     );
+    // }
+    sendEmail(e) {
         e.preventDefault();
 
         emailjs.sendForm('gmail', 'template_ylqwn9z', e.target, 'user_bbmNLOKzQC0ODgqHngWct')
@@ -46,18 +83,33 @@ function ContactMe() {
             console.log(error.text);
         });
         e.target.reset()
+        this.handleOpenDialog()
+        
     }
 
+    render(){
     return(
         <div>
+            <div>
+                <Dialog open={this.state.openDialog}>
+                    <DialogTitle>Messenge sent!</DialogTitle>
+                    <DialogContent>
+                        <p>I will get back to you as soon as possible!</p>
+                    </DialogContent>
+                    <DialogActions fullWidth>
+                        <Button type='button' onClick={this.handleCloseDialog}>Close</Button>
+                    </DialogActions>
+                </Dialog>
+            </div>
             <StyledDivContainer>
-            <form onSubmit={sendEmail}>
+            <form onSubmit={this.sendEmail}>
                     <div className="row pt-5 mx-auto">
                         <div className="col-8 form-group mx-auto">
                             <Textfield
                                 type = "text"
                                 label="Name"
                                 name="name"
+                                required
                             />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
@@ -65,6 +117,7 @@ function ContactMe() {
                                 type = "email"
                                 label="Email Address"
                                 name="email"
+                                required
                             />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
@@ -72,6 +125,7 @@ function ContactMe() {
                                 type="text"
                                 label="Subject"
                                 name="subject"
+                                required
                             />
                         </div>
                         <div className="col-8 form-group pt-2 mx-auto">
@@ -80,6 +134,7 @@ function ContactMe() {
                                 rows = '8'
                                 label="Message"
                                 name="message"
+                                required
                             />
                         </div>
                         <div className="col-8 pt-3 mx-auto">
@@ -90,6 +145,7 @@ function ContactMe() {
             </StyledDivContainer>
         </div>
     )
+    }
 }
 
 export default ContactMe;

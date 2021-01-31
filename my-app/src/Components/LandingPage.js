@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import BGimage from "../images/space2.png";
 import Navigation from "./Navigation";
 import Media from "./Media"
+
 const PageLayout = styled.div`
 width: 100%;
 
@@ -17,7 +18,7 @@ width: 100px;
 `;
 
 
-const StyledGridLayout = styled.div`
+const BGImagecontainer = styled.div`
 height: 350px;
 background: url(${BGimage}) center / cover;
 margin-top: 0px;
@@ -46,14 +47,14 @@ class LandingPage extends Component {
         return(
             <PageLayout>
                     <StyledBanner>
-                <StyledGridLayout>
+                <BGImagecontainer>
                     <StyledName>
                         Dixant Patel
                     </StyledName>
                         <MediaContainer>
                             <Media />
                         </MediaContainer>
-                </StyledGridLayout>
+                </BGImagecontainer>
                      </StyledBanner>
                 <Navigation/>
                 <EmptySpace/>
