@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import { Download } from '@styled-icons/feather/Download';
+import Resume from '../Assets/DixantPatelResume.pdf';
 
 const StyledEduContainer = styled.div`
 margin: auto;
@@ -22,8 +23,8 @@ const AboutMe = () => {
     return(
       <StyledEduContainer>
         
-          Download Resume here
-          <Link to='../Assets/DixantPatelResume.pdf' target="_blank" download="DixantPatelResume.pdf">
+        Download Resume here
+        <Link to={Resume} target="_blank" download="DixantPatelResume.pdf">
           <StyledDownloadBttn />
           </Link>
           
