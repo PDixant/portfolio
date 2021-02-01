@@ -13,20 +13,28 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 box - shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 `;
 
+const StyledTitle = styled.div`
+font-weight: Bold;
+font-family: Courier New, serifS;
+font-size: 90%;
+
+`
 
 const StyledDownloadBttn = styled(Download)`
 height: 30px;
 width 35px;
+padding-left: 15px;
 `;
 const AboutMe = () => {
 
     return(
       <StyledEduContainer>
-        
-        Download Resume here
+        <StyledTitle>
+          Download Resume here    
         <Link to={Resume} target="_blank" download="DixantPatelResume.pdf">
           <StyledDownloadBttn />
           </Link>
+        </StyledTitle>
           
         {/* <h5>
           Who am I?
