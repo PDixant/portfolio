@@ -12,7 +12,7 @@
     "react-dom": "^16.14.0",
     "react-mdl": "^1.11.0",
     "react-parallax": "^3.1.2",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "^4.0.3",
     "save": "^2.4.0",
     "styled-components": "^4.4.1",
     "styled-icons": "^9.5.0"
