@@ -151,7 +151,7 @@ class ContactMe extends Component {
                             />
                         </div>
                         <div>
-                            <Input/>
+                            <Input value="Submit" />
                         </div>
                     </div>
                 </form>
