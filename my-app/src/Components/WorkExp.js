@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Logo from '../images/index.png';
 import { Cell, Grid } from 'react-mdl';
-
+import Canvass from '../images/canvass.jpg'
+import DevImage from '../images/dev_1.jpg'
 const Title = styled.div`
 font-size: ${props => (props.ssize > 1250) ? '50px' : '35px' };
 font-weight: bold;
@@ -17,10 +18,10 @@ display: flex;
 margin: auto;
 justify-content: center;
 align-items: center;
-text-align: left;
+text-align: center;
 background:#ECEFF1;
 overflow: hidden;
-width: 40%;
+width:  ${props => (props.ssize > 1250) ? '40%' : '80%'}
 padding: 20px;
 border-radius: 12px;
 `;
@@ -30,22 +31,24 @@ text-align: center;
 font-weight: bold;
 font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
 color: #3b3838;
+padding-bottom: 30px;
 `;
 
 const CompDiscTitle = styled.span`
 font-weight: bold;
 font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
-padding-bottom: 30px;
 `;
 
 const CompDiscContainer = styled.div`
 text-align: left;
 color: #3b3838;
+width: 80%;
+padding-top: 30px;
+padding-left: 30px;
 `;
 
 const CompDisc = styled.p`
 font-size: ${props => (props.ssize > 1250) ? '20px' : '12px'}
-padding-top: 15px;
 padding-bottom: 15px;
 `;
 
@@ -53,6 +56,7 @@ const RoleTitleContainer = styled.div`
 text-align: left;
 font-weight: bold;
 font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
+padding-left: 30px;
 `;
 
 const RoleDisc = styled.p`
@@ -60,6 +64,7 @@ font-size: ${props => (props.ssize > 1250) ? '20px' : '12px'}
 font-weight: normal;
 padding-top: 15px;
 padding-bottom: 15px;
+width: 80%;
 `;
 
 class WorkExp extends Component{
@@ -79,13 +84,18 @@ class WorkExp extends Component{
         <Title ssize={screenSize}>
             Previous Work
         </Title>
-            <InfoContainer>
+            <InfoContainer ssize={screenSize}>
                 <Grid>
                     <Cell col={12}>
                     <CompName ssize={screenSize}>
                         <img src={Logo} alt="canvass logo"/>
                         Canvass Analytics
                     </CompName>
+                    </Cell>
+                    <Cell col={12}>
+                        <div>
+                            <img src={Canvass} width="95%" alt="canvass team"/>
+                        </div>
                     </Cell>
                     <Cell col={12}>
                     <CompDiscContainer ssize={screenSize}>
@@ -106,6 +116,12 @@ class WorkExp extends Component{
                             streams, and reduce energy and operating costs.
                         </CompDisc>
                     </CompDiscContainer>
+                    </Cell>
+                    <Cell col={12}>
+                        <div>
+                            <img src={DevImage} width="95%" alt={"a dev coding"}/>
+                            <figcaption>Photo by Jefferson Santos on Unsplash</figcaption>
+                        </div>
                     </Cell>
                     <Cell col={12}>
                     <RoleTitleContainer ssize={screenSize}> 
