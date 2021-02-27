@@ -16,7 +16,7 @@ padding-bottom: 50px;
 
 const StyledDivContainer = styled.div`
   margin: auto;
-  width: ${props => (props.ssize > 1250) ? '40%;' : '50%;'};
+  width: ${props => (props.ssize > 1250) ? '40%;' : '90%;'};
   background: #fff;
   padding: 40px;
   text-align: center;
