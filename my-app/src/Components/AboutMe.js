@@ -74,7 +74,7 @@ class AboutMe extends Component {
                 Welcome to my page!
                 </IntroText2>
               <IntroText3 ssize={screenSize}>
-                I’m a 4th year 
+                I am a 4th year 
                 <AltTextColor fcolor="#C14953" ssize={screenSize}>
                 software Engineer
                   </AltTextColor>
@@ -83,7 +83,7 @@ class AboutMe extends Component {
                 mathematics
                   </AltTextColor>
                 at the
-                Univerysity of Guelph.
+                University of Guelph.
                 you can download my resume here
                 <Link to={Resume} target="_blank" download="DixantPatelResume.pdf">
                 <StyledDownloadBttn ssize={screenSize}/>
