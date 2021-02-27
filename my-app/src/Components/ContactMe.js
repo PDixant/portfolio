@@ -5,7 +5,7 @@ import { Textfield } from 'react-mdl';
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from 'react-mdl';
 
 const Title = styled.div`
-font-size: ${props => (props.ssize > 1250) ? '40px' : '20px'};
+font-size: ${props => (props.ssize > 1250) ? '40px;' : '20px;'};
 font-weight: bold;
 text-align: center;
 color: #ECEFF1;
@@ -16,7 +16,7 @@ padding-bottom: 50px;
 
 const StyledDivContainer = styled.div`
   margin: auto;
-  width: ${props => (props.ssize > 1250) ? '40%' : '50%'};
+  width: ${props => (props.ssize > 1250) ? '40%;' : '50%;'};
   background: #fff;
   padding: 40px;
   text-align: center;

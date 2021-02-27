@@ -12,20 +12,20 @@ padding: 40px;
 `;
 
 const StyledDownloadBttn = styled(Download)`
-height: ${props => (props.ssize > 1250) ? '25px': '12px' };
-width: ${props => (props.ssize > 1250) ? '25px' : '12px' };
+height: ${props => (props.ssize > 1250) ? '25px;': '12px;' };
+width: ${props => (props.ssize > 1250) ? '25px;' : '12px;' };
 padding-left: 5px;
 `;
 
 const IntroText = styled.div`
-font-size: ${props => (props.ssize > 1250) ? '120px' : '75px' };
+font-size: ${props => (props.ssize > 1250) ? '120px;' : '75px;' };
 font-weight: bold;
 padding: 2px;
 text-align: right;
 color: #ECEFF1;
 `;
 const IntroText2 = styled.div`
-font-size: ${props => (props.ssize > 1250) ? '50px' : '25px' };
+font-size: ${props => (props.ssize > 1250) ? '50px;' : '25px;' };
 font-weight: bold;
 text-align: left;
 padding-bottom: 5px;
@@ -34,15 +34,15 @@ padding-bottom: 20px
 `;
 
 const IntroText3 = styled.div`
-font-size: ${props => (props.ssize > 1250) ? '20px' : '10px'}
-width: ${props => (props.ssize > 1250) ? '40%' : '80%'}
+font-size: ${props => (props.ssize > 1250) ? '20px;' : '10px;'}
+width: ${props => (props.ssize > 1250) ? '40%;' : '80%;'}
 text-align: left;
 color: #ECEFF1;
 `;
 
 const AltTextColor = styled.span`
 color: ${props => props.fcolor};
-font-size: ${props => (props.ssize > 1250) ? '20px' : '10px'}
+font-size: ${props => (props.ssize > 1250) ? '20px;' : '10px;'}
 margin: 0;
 padding-left: 4px;
 padding-right: 4px;

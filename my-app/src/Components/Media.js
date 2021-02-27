@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import {Linkedin, Instagram, Github} from "styled-icons/fa-brands/";
-import { Blog } from "styled-icons/fa-solid/Blog"
+import { Blog } from "@styled-icons/fa-solid/Blog"
 
 const MediaContainer = styled.div`
 display: flex;
@@ -38,7 +38,7 @@ const Media = () =>  {
             <a href="https://www.linkedin.com/in/dixantpatel/" rel="noopener noreferrer" target="_blank">
                 <StyledLinkedIn/>
             </a>
-            <a href="https://www.instagram.com/_.shutter.bug/" rel="noopener noreferrer" target="_blank">
+            <a href="https://www.instagram.com/dixant_captures/" rel="noopener noreferrer" target="_blank">
                 <StyledInstagram/>
             </a>
             <a href="https://github.com/PDixant/" rel="noopener noreferrer" target="_blank">

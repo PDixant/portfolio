@@ -21,7 +21,7 @@ align-items: center;
 text-align: center;
 background:#ECEFF1;
 overflow: hidden;
-width:  ${props => (props.ssize > 1250) ? '40%' : '80%'}
+width:  ${props => (props.ssize > 1250) ? '40%;' : '100%;'}
 padding: 20px;
 border-radius: 12px;
 `;
@@ -29,42 +29,42 @@ border-radius: 12px;
 const CompName = styled.div`
 text-align: center;
 font-weight: bold;
-font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
+font-size: ${props => (props.ssize > 1250) ? '50px;' : '15px;'}
 color: #3b3838;
 padding-bottom: 30px;
 `;
 
 const CompDiscTitle = styled.span`
 font-weight: bold;
-font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
+font-size: ${props => (props.ssize > 1250) ? '50px;' : '20px;'}
 `;
 
 const CompDiscContainer = styled.div`
 text-align: left;
 color: #3b3838;
-width: 80%;
+width: ${props => (props.ssize > 1250) ? '80%;' : '100%'}
 padding-top: 30px;
-padding-left: ${props => (props.ssize > 1250) ? '30px' : '0px'}
+padding-left: ${props => (props.ssize > 1250) ? '30px;' : '0px;'}
 `;
 
 const CompDisc = styled.p`
-font-size: ${props => (props.ssize > 1250) ? '20px' : '12px'}
+font-size: ${props => (props.ssize > 1250) ? '20px;' : '12px;'}
 padding-bottom: 15px;
 `;
 
 const RoleTitleContainer = styled.div`
 text-align: left;
 font-weight: bold;
-font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
-padding-left: ${props => (props.ssize > 1250) ? '30px' : '0px'}
+font-size: ${props => (props.ssize > 1250) ? '50px;' : '20px;'}
+padding-left: ${props => (props.ssize > 1250) ? '30px;' : '0px;'}
 `;
 
 const RoleDisc = styled.p`
-font-size: ${props => (props.ssize > 1250) ? '20px' : '12px'}
+font-size: ${props => (props.ssize > 1250) ? '20px;' : '12px;'}
 font-weight: normal;
 padding-top: 15px;
 padding-bottom: 15px;
-width: 80%;
+width: ${props => (props.ssize > 1250) ? '80%;' : '100%'}
 `;
 
 class WorkExp extends Component{
