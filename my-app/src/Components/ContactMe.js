@@ -16,8 +16,7 @@ padding-bottom: 50px;
 
 const StyledDivContainer = styled.div`
   margin: auto;
-  width: auto;
-  max-width:400px;
+  width: 400px;
   background: #fff;
   padding: 40px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -25,7 +24,7 @@ const StyledDivContainer = styled.div`
 `
 
 const Input = styled.input.attrs({ type: 'submit' })`
-  background: #00aec9;
+  background: #3b3838;
   color: #fff;
   cursor: pointer;
   margin-bottom: 0;
@@ -103,8 +102,8 @@ class ContactMe extends React.Component {
             </div>
             <StyledDivContainer>
             <form onSubmit={this.sendEmail}>
-                    <div className="row pt-5 mx-auto">
-                        <div className="col-8 form-group mx-auto">
+                    <div >
+                        <div>
                             <Textfield
                                 type = "text"
                                 label="Name"
@@ -112,7 +111,7 @@ class ContactMe extends React.Component {
                                 required
                             />
                         </div>
-                        <div className="col-8 form-group pt-2 mx-auto">
+                        <div>
                             <Textfield
                                 type = "email"
                                 label="Email Address"
@@ -120,7 +119,7 @@ class ContactMe extends React.Component {
                                 required
                             />
                         </div>
-                        <div className="col-8 form-group pt-2 mx-auto">
+                        <div>
                             <Textfield
                                 type="text"
                                 label="Subject"
@@ -128,7 +127,7 @@ class ContactMe extends React.Component {
                                 required
                             />
                         </div>
-                        <div className="col-8 form-group pt-2 mx-auto">
+                        <div>
                             <Textfield
                                 type="text"
                                 rows={8}
@@ -137,7 +136,7 @@ class ContactMe extends React.Component {
                                 required
                             />
                         </div>
-                        <div className="col-8 pt-3 mx-auto">
+                        <div>
                             <Input/>
                         </div>
                     </div>
