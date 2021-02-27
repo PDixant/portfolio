@@ -111,7 +111,7 @@ class WorkExp extends Component{
                             consumption, Increase throughput, reduce downtime and
                             extend the lifetime of a plant’s assets. Canvass has
                             been funded by Google’s Gradient venture funds and
-                            Fortune 500 companies use the platform to optimize
+                            Fortune 500 companies to use the platform to optimize
                             complex production processes, generate new revenue
                             streams, and reduce energy and operating costs.
                         </CompDisc>
@@ -128,11 +128,13 @@ class WorkExp extends Component{
                         What was my role ?
 
                     <RoleDisc ssize={screenSize}>
-                        My job has as a Software Engineer intern was to work
+                        My job as a Software Engineer intern was to work
                         on the front end of the Canvass AI/ML platform, performing
-                        tasks like optimizing user experience. The position consisted
+                        tasks like optimizing user experience, reducing time and effort it
+                        it would take the user to complete a task and add game changing algorithm
+                        to increase speed and usability of the platform. The position consisted
                         of building new components and containers for users to be
-                        able to new features of the platform, participating in Scrum
+                        able to use new features of the platform, participating in Scrum
                         and taking on demo’s. As an intern, being able to
                         participating in design meetings, team demo’s, socials and
                         scrum as a whole has provided me with the confidence and
