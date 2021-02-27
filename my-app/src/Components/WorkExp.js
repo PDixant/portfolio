@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Logo from '../images/index.png';
 import { Cell, Grid } from 'react-mdl';
+
 const Title = styled.div`
 font-size: ${props => (props.ssize > 1250) ? '70px' : '35px' };
 font-weight: bold;
@@ -59,6 +60,7 @@ padding: 30px;
 
 const RoleDisc = styled.span`
 font-size: ${props => (props.ssize > 1250) ? '20px' : '12px'}
+font-weight: normal;
 `;
 
 class WorkExp extends Component{
