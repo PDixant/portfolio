@@ -33,7 +33,7 @@ const Content = styled.div`
 padding-top: 20px;
 margin: auto;
 color: #ECEFF1;
-text-align: left;
+text-align: center;
 font-size: ${props => props.ssize > 1250 ? '20px;' : '12px;'}
 font-weight: bold;
 width: 60%;
