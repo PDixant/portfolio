@@ -5,7 +5,7 @@ import { Cell, Grid } from 'react-mdl';
 import Canvass from '../images/canvass.jpg'
 import DevImage from '../images/dev_1.jpg'
 const Title = styled.div`
-font-size: ${props => (props.ssize > 1250) ? '50px' : '35px' };
+font-size: ${props => (props.ssize > 1250) ? '30px' : '20px' };
 font-weight: bold;
 text-align: center;
 color: #ECEFF1;
@@ -82,7 +82,7 @@ class WorkExp extends Component{
     return(
         <div>
         <Title ssize={screenSize}>
-            Previous Work
+            Work Experience
         </Title>
             <InfoContainer ssize={screenSize}>
                 <Grid>

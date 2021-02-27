@@ -13,9 +13,8 @@ font-size: 50px;
 font-weight: bold;
 text-align: center;
 color: #ECEFF1;
-padding-top: 100px;
+padding-top: 10px;
 margin: auto;
-padding-bottom: 50px;
 `
 const ImageContainer = styled.div`
 text-align: center;
@@ -31,11 +30,13 @@ padding-left: 5px;
 color: #ECEFF1;
 `
 const Content = styled.div`
-padding-top: 50px;
+padding-top: 20px;
+margin: auto;
 color: #ECEFF1;
-text-align: center;
+text-align: left;
 font-size: ${props => props.ssize > 1250 ? '20px;' : '12px;'}
 font-weight: bold;
+width: 60%;
 `
 const Title = styled.div`
 padding-top: 50px;
