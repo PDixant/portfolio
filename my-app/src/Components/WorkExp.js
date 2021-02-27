@@ -44,7 +44,7 @@ text-align: left;
 color: #3b3838;
 width: 80%;
 padding-top: 30px;
-padding-left: 30px;
+padding-left: ${props => (props.ssize > 1250) ? '30px' : '0px'}
 `;
 
 const CompDisc = styled.p`
@@ -56,7 +56,7 @@ const RoleTitleContainer = styled.div`
 text-align: left;
 font-weight: bold;
 font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
-padding-left: 30px;
+padding-left: ${props => (props.ssize > 1250) ? '30px' : '0px'}
 `;
 
 const RoleDisc = styled.p`
@@ -125,7 +125,7 @@ class WorkExp extends Component{
                     </Cell>
                     <Cell col={12}>
                     <RoleTitleContainer ssize={screenSize}> 
-                        What is my role ?
+                        What was my role ?
 
                     <RoleDisc ssize={screenSize}>
                         My job has as a Software Engineer intern was to work

@@ -58,7 +58,6 @@ class AboutMe extends Component {
 
 
   render(){
-    console.log(window.innerWidth);
     const {
       screenSize
     } = this.state
