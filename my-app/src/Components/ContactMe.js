@@ -102,8 +102,9 @@ class ContactMe extends React.Component {
             </div>
             <StyledDivContainer>
             <form onSubmit={this.sendEmail}>
-                    <div >
+                    <div align-items="center">
                         <div>
+                            <label>Name  </label>
                             <Textfield
                                 type = "text"
                                 label="Name"
@@ -112,6 +113,7 @@ class ContactMe extends React.Component {
                             />
                         </div>
                         <div>
+                            <label>Email  </label>
                             <Textfield
                                 type = "email"
                                 label="Email Address"
@@ -120,6 +122,7 @@ class ContactMe extends React.Component {
                             />
                         </div>
                         <div>
+                            <label>Subject  </label>
                             <Textfield
                                 type="text"
                                 label="Subject"
@@ -127,6 +130,7 @@ class ContactMe extends React.Component {
                                 required
                             />
                         </div>
+                            <label>Message  </label>
                         <div>
                             <Textfield
                                 type="text"
