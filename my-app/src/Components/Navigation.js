@@ -11,11 +11,13 @@ margin: auto;
 margin-top: 1%;
 width: 90%;
 height: 100%;
+background: #484848;
 `
 const PageLayout = styled.div`
 width: '100%';
 margin: 'auto';
 overflow-y: 'scroll';
+background: #484848;
 `;
 
 class Navigation extends Component {

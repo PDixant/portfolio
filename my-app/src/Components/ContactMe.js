@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import styled from 'styled-components';
 import { Textfield } from 'react-mdl';
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from 'react-mdl';
+
 const StyledDivContainer = styled.div`
   margin: auto;
   width: auto;
@@ -57,22 +58,7 @@ class ContactMe extends React.Component {
         });
     }
 
-    // showModel(){
-    //     return (
-    //         <div>
-    //             <Dialog open={this.state.openDialog}>
-    //                 <DialogTitle>Allow this site to collect usage data to improve your experience?</DialogTitle>
-    //                 <DialogContent>
-    //                     <p>Allowing us to collect data will let us get you the information you want faster.</p>
-    //                 </DialogContent>
-    //                 <DialogActions fullWidth>
-    //                     <Button type='button'>Agree</Button>
-    //                     <Button type='button' onClick={this.handleCloseDialog}>Disagree</Button>
-    //                 </DialogActions>
-    //             </Dialog>
-    //         </div>
-    //     );
-    // }
+
     sendEmail(e) {
         e.preventDefault();
 
@@ -88,6 +74,7 @@ class ContactMe extends React.Component {
     }
 
     render(){
+        
     return(
         <div>
             <div>
@@ -131,7 +118,7 @@ class ContactMe extends React.Component {
                         <div className="col-8 form-group pt-2 mx-auto">
                             <Textfield
                                 type="text"
-                                rows = '8'
+                                rows={8}
                                 label="Message"
                                 name="message"
                                 required
