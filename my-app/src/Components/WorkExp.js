@@ -4,7 +4,7 @@ import Logo from '../images/index.png';
 import { Cell, Grid } from 'react-mdl';
 
 const Title = styled.div`
-font-size: ${props => (props.ssize > 1250) ? '70px' : '35px' };
+font-size: ${props => (props.ssize > 1250) ? '50px' : '35px' };
 font-weight: bold;
 text-align: center;
 color: #ECEFF1;
@@ -22,6 +22,7 @@ overflow: hidden;
 font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
 padding: 20px;
 color: #3b3838;
+border-radius: 12px;
 `;
 
 const CompDiscTitle = styled.span`
@@ -39,6 +40,7 @@ width: 40%;
 overflow: hidden;
 padding: 20px;
 color: #3b3838;
+border-radius: 12px;
 `;
 
 const CompDisc = styled.span`
@@ -56,6 +58,7 @@ background: #FFC857;
 font-weight: bold;
 font-size: ${props => (props.ssize > 1250) ? '50px' : '20px'}
 padding: 30px;
+border-radius: 12px;
 `;
 
 const RoleDisc = styled.span`

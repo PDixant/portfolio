@@ -18,7 +18,7 @@ padding-left: 5px;
 `;
 
 const IntroText = styled.div`
-font-size: ${props => (props.ssize > 1250) ? '150px' : '75px' };
+font-size: ${props => (props.ssize > 1250) ? '120px' : '75px' };
 font-weight: bold;
 padding: 2px;
 text-align: right;
@@ -35,7 +35,7 @@ padding-bottom: 20px
 
 const IntroText3 = styled.div`
 font-size: ${props => (props.ssize > 1250) ? '20px' : '10px'}
-width: ${props => (props.ssize > 1250) ? '50%' : '80%'}
+width: ${props => (props.ssize > 1250) ? '40%' : '80%'}
 text-align: left;
 color: #ECEFF1;
 `;

@@ -5,7 +5,7 @@ import BGimage from "../images/space2.png";
 import Media from "./Media"
 import AboutMe from './AboutMe';
 import ContactMe from './ContactMe'
-
+import Hobbies from './Hobbies';
 const PageLayout = styled.div`
 width: 100%;
 background: #312F2F;
@@ -59,6 +59,9 @@ class LandingPage extends Component {
                 {/* <Navigation/> */}
                 <div>
                     <AboutMe />
+                </div>
+                <div>
+                    <Hobbies/>
                 </div>
                 <div>
                     <ContactMe />
