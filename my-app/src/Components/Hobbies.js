@@ -80,7 +80,7 @@ class Hobbies extends Component {
                         <StyledInstagram />
                     </a>
                 </Content>
-            <HobbyContainer ssize={screenSize}>
+                <HobbyContainer ssize={screenSize}>
                 <ImageContainer ssize={screenSize} id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
 
