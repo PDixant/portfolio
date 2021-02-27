@@ -12,8 +12,8 @@ padding: 40px;
 `;
 
 const StyledDownloadBttn = styled(Download)`
-height: ${props => (props.ssize > 1250) ? '8%': '15%' };
-width: ${props => (props.ssize > 1250) ? '8%' : '15%' };;
+height: ${props => (props.ssize > 1250) ? '25px': '12px' };
+width: ${props => (props.ssize > 1250) ? '25px' : '12px' };
 padding-left: 5px;
 `;
 

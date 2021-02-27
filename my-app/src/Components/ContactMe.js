@@ -4,6 +4,16 @@ import styled from 'styled-components';
 import { Textfield } from 'react-mdl';
 import { Button, Dialog, DialogTitle, DialogContent, DialogActions } from 'react-mdl';
 
+const Title = styled.div`
+font-size: ${props => (props.ssize > 1250) ? '70px' : '35px'};
+font-weight: bold;
+text-align: center;
+color: #ECEFF1;
+padding-top: 100px;
+padding-bottom: 50px;
+`;
+
+
 const StyledDivContainer = styled.div`
   margin: auto;
   width: auto;
@@ -78,6 +88,9 @@ class ContactMe extends React.Component {
     return(
         <div>
             <div>
+                <Title>
+                    Contact Me!
+                </Title>
                 <Dialog open={this.state.openDialog}>
                     <DialogTitle>Messenge sent!</DialogTitle>
                     <DialogContent>
